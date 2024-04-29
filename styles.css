@@ -69,3 +69,11 @@ body {
   margin-top: 20;
   color: #fff; /* Cor do título central */
 }
+
+.search-bar {
+  margin-bottom: 20px;
+}
+
+.objeto-exemplo {
+  margin-bottom: 10px;
+}

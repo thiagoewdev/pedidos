@@ -12,3 +12,19 @@ abrirFecharMenuBtn.addEventListener("click", function () {
       "20px"; /* Ajuste para evitar sobreposição */
   }
 });
+
+// Implementação do filtro de busca
+var searchInput = document.getElementById("searchInput");
+var objetosExemplo = document.querySelectorAll(".objeto-exemplo");
+
+searchInput.addEventListener("input", function () {
+  var searchTerm = this.value.toLowerCase();
+  objetosExemplo.forEach(function (objeto) {
+    var textoObjeto = objeto.textContent.toLowerCase();
+    if (textoObjeto.includes(searchTerm)) {
+      objeto.style.display = "block";
+    } else {
+      objeto.style.display = "none";
+    }
+  });
+});
