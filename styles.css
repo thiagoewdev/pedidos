@@ -1,7 +1,8 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background-color: #f0f0f0;
+  background-color: #333;
+  color: #fff;
 }
 
 #menu-lateral {
@@ -10,26 +11,28 @@ body {
   left: -220px; /* Inicialmente oculto */
   height: 100%;
   width: 220px;
-  background-color: #333;
-  color: #fff;
+  background-color: #555; /* Cor de fundo do menu lateral */
   padding-top: 60px;
   transition: left 0.3s ease;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Sombra suave */
+  z-index: 999; /* Coloquei um z-index maior para ficar acima do conteúdo */
 }
 
 #abrir-fechar-menu {
   position: fixed;
   top: 20px;
-  left: 20px; /* Posicionado à esquerda */
-  background-color: #333;
+  left: 0; /* Posicionado à esquerda */
+  background-color: #555; /* Cor de fundo do botão de menu */
   color: #fff;
   padding: 10px 20px;
   cursor: pointer;
   z-index: 1000;
   transition: left 0.3s ease; /* Ajuste para acompanhar a abertura/fechamento */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Sombra suave */
 }
 
 #abrir-fechar-menu:hover {
-  background-color: #555;
+  background-color: #777; /* Cor de fundo do botão de menu quando hover */
 }
 
 #menu-lateral a {
@@ -38,8 +41,31 @@ body {
   text-decoration: none;
   padding: 10px 20px;
   font-size: 18px;
+  transition: background-color 0.3s ease;
 }
 
 #menu-lateral a:hover {
-  background-color: #555;
+  background-color: #777; /* Cor de fundo do item de menu quando hover */
+}
+
+#conteudo {
+  margin: 20px; /* Ajuste para evitar sobreposição com o menu lateral */
+  padding: 20px;
+  transition: margin-left 0.3s ease;
+  background-color: #fff; /* Cor de fundo do conteúdo */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Sombra suave */
+  border-radius: 10px; /* Cantos arredondados */
+  margin-top: 100px; /* Margem superior para o título central */
+  color: #333;
+}
+
+#menu-lateral.aberto ~ #conteudo {
+  margin-left: 20px; /* Empurrar o conteúdo quando a barra lateral estiver aberta */
+}
+
+#titulo-central {
+  text-align: center;
+  font-size: 24px;
+  margin-top: 20;
+  color: #fff; /* Cor do título central */
 }
