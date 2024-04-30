@@ -26,18 +26,38 @@
         />
       </div>
       <div id="objetos-exemplo">
-        <div class="objeto-exemplo">Objeto Exemplo 1</div>
-        <div class="objeto-exemplo">Objeto Exemplo 2</div>
-        <div class="objeto-exemplo">Objeto Exemplo 3</div>
-        <div class="objeto-exemplo">Objeto Exemplo 4</div>
-        <div class="objeto-exemplo">Objeto Exemplo 5</div>
+        <div class="objeto-exemplo">
+          Objeto Exemplo 1
+          <input type="number" class="quantidade" value="1" />
+          <button class="add-button">Adicionar</button>
+        </div>
+        <div class="objeto-exemplo">
+          Objeto Exemplo 2
+          <input type="number" class="quantidade" value="1" />
+          <button class="add-button">Adicionar</button>
+        </div>
+        <div class="objeto-exemplo">
+          Objeto Exemplo 3
+          <input type="number" class="quantidade" value="1" />
+          <button class="add-button">Adicionar</button>
+        </div>
+        <div class="objeto-exemplo">
+          Objeto Exemplo 4
+          <input type="number" class="quantidade" value="1" />
+          <button class="add-button">Adicionar</button>
+        </div>
+        <div class="objeto-exemplo">
+          Objeto Exemplo 5
+          <input type="number" class="quantidade" value="1" />
+          <button class="add-button">Adicionar</button>
+        </div>
       </div>
       <h2 id="pedidos-realizados">Pedidos Realizados</h2>
-      <p>
-        Aqui você pode visualizar todos os pedidos que já foram realizados em
-        nosso site. É uma forma conveniente de acompanhar o status dos seus
-        pedidos.
-      </p>
+      <div id="carrinho">
+        <h3>Carrinho</h3>
+        <ul id="lista-carrinho"></ul>
+      </div>
+      <button id="export-button">Exportar para Excel</button>
     </div>
     <script src="scripts.js"></script>
   </body>

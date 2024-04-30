@@ -55,7 +55,7 @@ body {
   background-color: #fff; /* Cor de fundo do conteúdo */
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Sombra suave */
   border-radius: 10px; /* Cantos arredondados */
-  margin-top: 100px; /* Margem superior para o título central */
+  margin-top: 30px; /* Margem superior para o título central */
   color: #333;
 }
 
@@ -66,8 +66,9 @@ body {
 #titulo-central {
   text-align: center;
   font-size: 24px;
-  margin-top: 20;
+  margin-top: 30px;
   color: #fff; /* Cor do título central */
+  display: block;
 }
 
 .search-bar {
@@ -76,4 +77,56 @@ body {
 
 .objeto-exemplo {
   margin-bottom: 10px;
+}
+
+.quantidade {
+  width: 50px;
+}
+
+.add-button {
+  cursor: pointer;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.add-button:hover {
+  background-color: #45a049;
+}
+
+#carrinho {
+  background-color: #f2f2f2;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+.delete-button {
+  cursor: pointer;
+  background-color: #f44336;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin-left: 10px;
+}
+
+.delete-button:hover {
+  background-color: #d32f2f;
+}
+
+#export-button {
+  cursor: pointer;
+  background-color: #2196f3;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+#export-button:hover {
+  background-color: #1976d2;
 }
